@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: rgb(228, 226, 226);
+    font-family: 'Nunito', sans-serif;
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+header#header-mobile {
+    display: none;
+}
+
+.header-item {
+    padding: 3px;
+    height: 7vh;
+    width: 22vh;
+    border-radius: 4px;
+    position: relative;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input.search-bar {
+    border-bottom: #000000 solid 1px;
+    border-radius: 0px;
+    width: 450px;
+}
+
+.width-40 {
+    width: 40%
+}
+
+.radius-15 {
+    border-radius: 15px;
+}
+
+.main-banner {
+    width: 100%;
+    height: 100%;
+}
+
+.main-banner img {
+    max-width: 100%;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+}
+
+.p-top {
+    font-size: 22px;
+    font-weight: bold;
+    color: white
+}
+
+.p-bottom {
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.first-title {
+    margin-left: 100px;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.product-container {
+    margin: 10px;
+    position: relative;
+}
+
+.triangulo-off {
+    display:none;
+}
+
+.triangulo-on::before {
+    content: "OFF";
+    position: absolute;
+    bottom: 45px;
+    left: -38px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.triangulo-on {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 80px solid rgb(255, 96, 96); 
+    border-left: 80px solid transparent;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+div.product-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-description {
+    background-color: #ccc;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.product-listPrice{
+    text-decoration: line-through;
+    height: 22px;
+}
+
+.price {
+    color: black;
+}
+
+.product-name {
+    height: 45px;
+    width: auto;
+    padding: 3px;
+    font-size: 16px;
+}
+
+div.product-description button {
+    background-color: #000000;
+    color: white;
+    width: 25vh;
+    height: 30px;
+    border-radius: 4px;
+    border: transparent;
+}
+
+.star-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.star-1 i:nth-child(n+5) {
+   font-weight: 900;
+   color: rgb(255, 96, 96);
+}
+
+.star-2 i:nth-child(n+4) {
+   font-weight: 900;
+    color: rgb(255, 96, 96);
+}
+
+.star-3 i:nth-child(n+3) {
+   font-weight: 900;
+   color: rgb(255, 96, 96);
+}
+
+.star-4 i:nth-child(n+2) {
+   font-weight: 900;
+   color: rgb(255, 96, 96);
+}
+
+.star-5 i:nth-child(n+1) {
+   font-weight: 900;
+   color: rgb(255, 96, 96);
+}
+
+div li {
+    list-style: none;
+}
+
+.last-div {
+    background-color: #ccc;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    margin-top: 10vh;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form input {
+    width: 40vh;
+    height: 30px;
+    border-radius: 4px;
+    border: transparent;
+    padding-left: 10px;
+}
+
+form button {
+    background-color: #000000;
+    color: white;
+    width: 25vh;
+    height: 30px;
+    border-radius: 4px;
+    border: transparent;
+}
+
+button.search-btn {
+    background-color: white;
+    color: #000000;
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    border-bottom: #000000 solid 1px;
+    border-radius: 0%;
+}
+
+.sales-title {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-item-left {
+    color: white;
+    width: 33.2%;
+    height: 25vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+}
+
+.line {
+    background-color: white;
+    width: 60px;
+    height: 5px;
+}
+
+.footer-item-center {
+    color: white;
+    width: 33.2%;
+    height: 25vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+div.contact-left {
+    background-color: white;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 800;
+    height: 40px;
+    width: 170px;
+    border-radius: 10px;
+    border: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.contact-rigth {
+    background-color: white;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 800;
+    height: 40px;
+    width: 170px;
+    border-radius: 10px;
+    border: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item-right {
+    color: white;
+    width: 33.2%;
+    height: 25vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;     
+}
+
+div.creator-left {
+    font-size: 10px;
+    position: relative;
+    left: 55px;
+}
+
+div.creator-rigth {
+    font-size: 10px;
+    position: relative;
+    right: 55px;
+
+}
+
+@media (max-width: 640px) {
+
+    .container {
+        font-size: 8px;
+    }
+
+    header#header {
+        display: none;
+    }
+
+    header#header-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    div.header-mobile {
+        width: 100%;
+    }
+
+    div.top-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.bottom-box input {
+        width: 100%;
+        border-bottom: #000000 solid 1px;
+    }
+
+    div.bottom-box {
+        width: 100%;
+        position: relative;
+    }
+    
+    div.bottom-box button {
+        position: absolute;
+        right: 10px;
+        background-color: transparent;
+        border-bottom: #000000 solid 1px;
+    }
+}
